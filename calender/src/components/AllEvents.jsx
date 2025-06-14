@@ -42,6 +42,7 @@ const AllEvents = () => {
 
   
   const handleUpdate = (updatedEvent) => {
+    
     editEvent(editDate, editIndex, updatedEvent);
     resetModalState();
   };
@@ -60,7 +61,7 @@ const AllEvents = () => {
         All Scheduled Events
       </h1>
 
-      {/* Search */}
+     
       <div className="flex justify-center mb-6">
         <input
           type="text"
@@ -114,7 +115,7 @@ const AllEvents = () => {
         </div>
       )}
 
-      {/* Edit Modal */}
+  
       {modalOpen && (
         <EventModal
           date={new Date(editDate)}

@@ -29,7 +29,10 @@ export const EventProvider = ({ children }) => {
   };
 
   const editEvent = (date, index, updatedEvent) => {
-    const key = formatDate(date);
+    let key = date;
+    if (typeof key !== "string") {
+      key = formatDate(date);
+    }
     setEvents((prev) => {
       const updatedEvents = [...(prev[key] || [])];
       updatedEvents[index] = updatedEvent;
@@ -41,9 +44,9 @@ export const EventProvider = ({ children }) => {
   };
 
   const deleteEvent = (date, index) => {
-    let key=date
-    if(typeof(key)!=="string"){
-        key = formatDate(date);
+    let key = date;
+    if (typeof key !== "string") {
+      key = formatDate(date);
     }
     setEvents((prev) => {
       const updatedEvents = [...(prev[key] || [])];
