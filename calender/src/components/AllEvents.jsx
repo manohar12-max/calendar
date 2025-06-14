@@ -85,23 +85,24 @@ const AllEvents = () => {
                 {list.map((event, index) => (
                   <div
                     key={index}
-                    className="border-l-4 border-purple-400 pl-4 py-2 relative group bg-purple-50 rounded"
-                  >
+                    className="border-l-4 border-purple-400 pl-4 py-2 relative group bg-purple-50 rounded flex justify-between"
+                  > 
+                  <div>
                     <h3 className="font-semibold text-gray-800">{event.title}</h3>
                     <p className="text-sm text-gray-600">{event.description}</p>
                     <p className="text-xs text-purple-500">⏰ {event.time}</p>
-
-                    <div className="absolute top-2 right-2 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                  </div>
+                    <div className=" flex gap-2  transition-opacity">
                       <button
                         onClick={() => handleEdit(date, index, event)}
-                        className="text-blue-600 hover:text-blue-800"
+                        className="text-blue-600 "
                         title="Edit"
                       >
                         <FaEdit />
                       </button>
                       <button
                         onClick={() => handleDelete(date, index)}
-                        className="text-red-600 hover:text-red-800"
+                        className="text-red-600 "
                         title="Delete"
                       >
                         <FaTrash />
