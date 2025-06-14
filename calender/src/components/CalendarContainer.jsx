@@ -43,7 +43,7 @@ export default function CalendarContainer() {
       <div className="flex justify-between items-center w-full max-w-3xl mb-4">
         <button
           onClick={goToPreviousMonth}
-          className="px-1 sm:px-3 py-1 bg-purple-200 text-purple-800 rounded"
+          className="px-1 sm:px-3 py-1 bg-purple-200 text-purple-800 rounded cursor-pointer"
         >
           ← Prev
         </button>
@@ -57,7 +57,7 @@ export default function CalendarContainer() {
 
         <button
           onClick={goToNextMonth}
-          className="px-1 sm:px-3 py-1 bg-purple-200 text-purple-800 rounded"
+          className="px-1 sm:px-3 py-1 bg-purple-200 text-purple-800 rounded cursor-pointer"
         >
           Next →
         </button>

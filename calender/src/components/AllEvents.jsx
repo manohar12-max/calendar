@@ -95,15 +95,15 @@ const AllEvents = () => {
                     <div className=" flex gap-2  transition-opacity">
                       <button
                         onClick={() => handleEdit(date, index, event)}
-                        className="text-blue-600 "
-                        title="Edit"
+                        className="text-blue-600 cursor-pointer "
+                      
                       >
                         <FaEdit />
                       </button>
                       <button
                         onClick={() => handleDelete(date, index)}
-                        className="text-red-600 "
-                        title="Delete"
+                        className="text-red-600 cursor-pointer "
+                        
                       >
                         <FaTrash />
                       </button>
