@@ -1,5 +1,5 @@
 export function useGetArrayOfDays(year, month) {
-  console.log("useGetArrayOfDays called with year:", year, "and month:", month);
+  
   
   const daysInMonth = new Date(year, month + 1, 0).getDate();
   const firstDay = new Date(year, month, 1).getDay();

@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useEventContext } from "../context/EventContext";
 
 export default function EventModal({ date, onClose, existingEvent = null, onSave = null }) {
-  console.log(date)
+ 
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [time, setTime] = useState("");

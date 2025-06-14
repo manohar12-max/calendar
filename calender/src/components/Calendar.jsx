@@ -52,7 +52,7 @@ export default function Calendar({
                 <div className="w-full flex flex-col items-center sm:flex-row justify-between ">
                 
                   <button
-                    className=" text-purple-600 hover:text-purple-900 pb-2 sm:pb-0"
+                    className=" text-purple-600 hover:text-purple-900 pb-2 sm:pb-0 cursor-pointer"
                     onClick={(e) => {
                       e.stopPropagation();
                       onDateClick(day.fullDate);
@@ -64,7 +64,7 @@ export default function Calendar({
 
                   
                   <button
-                    className=" text-purple-600 hover:text-purple-900"
+                    className=" text-purple-600 hover:text-purple-900 cursor-pointer"
                     onClick={(e) => {
                       e.stopPropagation();
                       onViewClick(day.fullDate);
