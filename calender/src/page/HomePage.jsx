@@ -16,14 +16,14 @@ export default function HomePage() {
       <div className="w-full max-w-md flex flex-col sm:flex-row sm:justify-center gap-4">
         <button
           onClick={() => navigate("/calendar")}
-          className="w-full sm:w-auto px-8 py-4 text-lg sm:text-xl rounded-xl bg-purple-600 text-white hover:bg-purple-700 transition duration-200 shadow-md"
+          className="w-full sm:w-auto px-8 py-4 text-lg sm:text-xl rounded-xl bg-purple-600 text-white hover:bg-purple-700 transition duration-200 shadow-md cursor-pointer"
         >
           🗓️ Open Full Calendar
         </button>
 
         <button
           onClick={() => navigate("/all-events")}
-          className="w-full sm:w-auto px-8 py-4 text-lg sm:text-xl rounded-xl bg-purple-100 text-purple-800 hover:bg-purple-200 transition duration-200 shadow-md"
+          className="w-full sm:w-auto px-8 py-4 text-lg sm:text-xl rounded-xl bg-purple-100 text-purple-800 hover:bg-purple-200 transition duration-200 shadow-md cursor-pointer"
         >
           📋 View All Events
         </button>

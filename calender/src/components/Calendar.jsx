@@ -40,7 +40,7 @@ export default function Calendar({
                 ${!day ? "invisible" : ""}`}
             >
               <div
-                className={`text-md font-semibold mb-1 ${
+                className={`sm:text-xl md:text-2xl font-semibold mb-1 ${
                   hasEvent
                     ? "text-white font-bold w-5 h-6 sm:w-7 sm:h-7 flex items-center justify-center rounded-full bg-purple-500"
                     : ""
@@ -52,14 +52,14 @@ export default function Calendar({
                 <div className="w-full flex flex-col items-center sm:flex-row justify-between ">
                 
                   <button
-                    className=" text-purple-600 hover:text-purple-900 pb-2 sm:pb-0 cursor-pointer"
+                    className=" text-purple-600 hover:text-purple-900 pb-3 sm:pb-0 cursor-pointer "
                     onClick={(e) => {
                       e.stopPropagation();
                       onDateClick(day.fullDate);
                     }}
                    
                   >
-                    <MdAdd size={16} />
+                    <MdAdd   className="sm:text-xl md:text-2xl" />
                   </button>
 
                   
@@ -71,7 +71,7 @@ export default function Calendar({
                     }}
                     
                   >
-                    <MdVisibility size={14} />
+                    <MdVisibility  className="sm:text-xl md:text-2xl" />
                   </button>
                 </div>
               
