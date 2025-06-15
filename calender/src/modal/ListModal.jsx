@@ -53,7 +53,7 @@ const ListModal = ({ date, onClose }) => {
           ) : (
             <ul className="space-y-3 max-h-64 overflow-y-auto">
               {[...eventList]
-                .sort((a, b) => a.time.localeCompare(b.time)) // 👈 sort by time
+                .sort((a, b) => a.time.localeCompare(b.time)) 
                 .map((event, index) => (
                   <li
                     key={index}

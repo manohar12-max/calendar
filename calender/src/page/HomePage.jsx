@@ -10,7 +10,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-gray-50 px-4 py-10 flex flex-col items-center gap-10">
       <h1 className="text-3xl sm:text-4xl font-bold text-purple-700 text-center">
-        Welcome to Your Event Planner
+        Welcome to Your Calendar App
       </h1>
 
       <div className="w-full max-w-md flex flex-col sm:flex-row sm:justify-center gap-4">

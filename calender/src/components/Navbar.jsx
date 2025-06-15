@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <nav className="bg-purple-600 text-white py-4 px-6 shadow-md flex flex-wrap items-center justify-between">
-      <h1 className="text-xl font-bold">Event Planner</h1>
+      <h1 className="text-xl font-bold">Calendar App</h1>
 
       <div className="flex gap-4 text-sm sm:text-base">
         <NavLink
